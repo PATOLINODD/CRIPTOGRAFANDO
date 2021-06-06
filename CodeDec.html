@@ -1,0 +1,41 @@
+	<!DOCTYPE html>
+		<html>
+			<head>
+				<meta charset='utf-8'/>
+				<title>CRIPTOGRAFIA</title>
+				<link rel='stylesheet' href='./estilo.css'/>
+			</head>
+			<body>
+			<div id='body'>
+				<h1> CRIPTOGRAFIA E DESCRIPTOGRAFIA </h1>
+				<section id='moeda' class='borda'>
+					<div>
+					<select id='qual?' class='borda'>
+						<option> nenhum selecionado </option>
+						<option id='cesar' value='Cesar'> Cifra de Cesar </option>
+						<option id='base64' value='Base64'> Base64 </option>	
+					</select>
+					<div id='show'>
+						<label>ESCOLHA O NUMERO DE CASAS DO ALFABETO!</label>
+						<input type='number' id='numero' class='borda'>
+					</div>
+					<form id='checar'>
+						<labe>CRIPTOGRAFAR</label>
+						<input id='codf'  type='radio' name='opcao' value='criptografando'>
+						<labe>DESCRIPTOGRAFAR</label>
+						<input id='dCodf' type='radio' name='opcao' value='descriptografando'>
+					</form>
+					</div>
+					<div>
+						<textarea  id='aCodificar' cols='27em' rows='9em' class='borda' name='text'></textarea>
+						<textarea id='mostra' cols='27em' rows='9em' disabled class='borda' name='text'></textarea>
+						<p id='mensagem' display='none'>
+							Você precisa selecionar se deseja, CRIPTOGRAFAR ou DESCRIPTOGRAFAR
+						</p>
+					</div>
+					<button class='borda' name='botao'> ABRACADABRA </button>
+				</section>
+			</div>
+			<script type='text/javascript' src='codeAndDecod.js'></script>
+			</body>
+		</html>

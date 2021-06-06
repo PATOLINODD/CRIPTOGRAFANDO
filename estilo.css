@@ -1,0 +1,59 @@
+	section{
+		padding: 1em 1em;
+		color: 	#00FF00;
+		background-color: #000000;	
+	}
+	#moeda{
+		background-repeat: no-repeat;
+		background-size: cover;
+		backround-position: top;
+	}
+	::selection{
+		background-color: #0000FF;
+		color: #FFFFFF;		
+	}
+
+	#mensagem{
+		display: none;
+		flex-flow: column wrap;
+	}
+	#show{
+		display: flex;
+		flex-flow: column wrap;
+		display: none;
+	}
+	#numero{
+		margin-right: 100%;
+	}
+	#mostra{
+		resize: none;
+	}
+	body{
+		display: flex;
+		justify-content: center;
+		flex-flow: column wrap;
+		width: 70%;
+		height: 100%;
+		background-image: url('imagens/criptografia.jpg');
+	}
+	#body{
+		margin: 20% 0% 20% 40%;
+		background-repeat: no-repeat;
+	}
+	h1{
+		color: 	#00FF00;
+		text-align: center;
+	}
+	.borda{
+		border: 2px solid #00FF00;
+		border-radius: 0.5em;
+	}
+	button{
+		background-color: black;
+		color: #00FF00;
+	}
+	textarea{
+		background-color: black;
+		color: #00FF00;
+		resize: none;
+	}
