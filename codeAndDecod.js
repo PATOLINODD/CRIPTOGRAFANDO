@@ -1,4 +1,4 @@
-	const qual   	 	= document.getElementById('qual?');
+	let qual   	 	= document.getElementById('qual?');
 	const btn    		= document.querySelector('button');
 	const checar  	 	= document.querySelector('#checar');
 	const dcrip  	 	= document.querySelector('#dCodf');
@@ -17,24 +17,29 @@
 
 		qual.onchange = function(){
 				if(qual.value === 'Cesar'){
-					document.querySelector('#mensagem').style.backgroundColor = 'white';
-					document.querySelector('#mensagem').style.border = '1px solid gray';
-					document.querySelector('#moeda').style.backgroundImage = "url('imagens/cesar.jpg')";
-					document.querySelector('#moeda').style.color = 'black';
+					document.querySelector('#mensagem').style.backgroundColor 	= 'white';
+					document.querySelector('#mensagem').style.border 		= '1px solid gray';
+					document.querySelector('#moeda').style.backgroundImage 		= "url('imagens/cesar.jpg')";
+					document.querySelector('body').style.backgroundImage 		= "url('imagens/criptografia.jpg')";
+					document.querySelector('#moeda').style.color			= 'black';
 					for(let i of bordas){
-						i.style.borderColor = 'gray';
-						if(i.name === 'text'){
-							i.style.color = 'black';
-							i.style.backgroundColor = 'white';
-						}
-						if(i.name === 'botao'){
-							i.style.backgroundColor = 'white';
-							i.style.color = 'black';
-						}
+						i.style.borderColor 	= 'gray';
+						i.style.color 		= 'black';
+						i.style.backgroundColor = 'white';
 					}
 					show.style.display = 'flex';
-				}else if(qual.value === 'Base64'){
-					document.querySelector('body').style.backgroundImage = "url('imagens/base64.jpg')";
+				}
+				else{
+					document.querySelector('#mensagem').style.backgroundColor 	= 'black';
+					document.querySelector('body').style.backgroundImage 		= "url('imagens/base64.jpg')";
+					document.querySelector('#moeda').style.backgroundImage 		= "none";
+					document.querySelector('#moeda').style.backgroundColor 		= '#00FF00';
+					document.querySelector('#moeda').style.color 			= '#00FF00';
+						for(let i of bordas){
+							i.style.borderColor 	= '#00FF00';
+							i.style.backgroundColor = '#000000';
+							i.style.color 		= '#00FF00';
+						}
 					show.style.display = 'none';
 				}
 		}
